@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="gs1" class="com.Spring.GreetingServiceImpl">
+		<property name="greeting">
+			<value>this is setter </value>
+		</property>
+	</bean>
+	
+	<bean id="gs2" class="com.Spring.GreetingServiceImpl">
+		<constructor-arg>
+			<value>this is constructor</value>
+		</constructor-arg>
+	</bean>
+</beans>
