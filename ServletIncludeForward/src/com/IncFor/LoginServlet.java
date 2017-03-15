@@ -25,7 +25,7 @@ public class LoginServlet extends HttpServlet {
 		PrintWriter writer = response.getWriter();
 		String uname=request.getParameter("uname");
 		String upwd= request.getParameter("upwd");
-		if(uname.equals("ravi")&&upwd.equals("chinna"))
+		if(uname.equals("teja")&&upwd.equals("chinna"))
 		{
 			RequestDispatcher dispatcher = request.getRequestDispatcher("SucessServlet");
 			dispatcher.forward(request, response);
